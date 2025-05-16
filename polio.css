@@ -123,18 +123,36 @@ span {
     padding: 10px 70px;
     font-weight: 700;
 }
-.secondry_btn{
+.secondry_btn {
     border: 1px solid white;
-    border-radius: 50%;
-    padding: 10px 15px;
+    border-radius: 50%; /* Perfect circle */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height (equal to width) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     text-decoration: none;
-    color: black;
-    font-weight: 700;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
+
 .secondry_btn i {
-    color:black;
+    color: black;
+    font-size: 1.2rem; /* Adjust icon size */
 }
+
+/* Hover Effects */
+.secondry_btn:hover {
+    transform: translateY(-5px) scale(1.1); /* Lift + slight zoom */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    background-color: #ffffff;
+    border-color: #222222;
+}
+
+.secondry_btn:hover i {
+    color: rgb(0, 0, 0); /* Icon color change on hover */
+}
+
 
 /* Social Links */
 .connect_links {
@@ -193,12 +211,30 @@ span {
 .right {
     text-align: center;
 }
-.boxes{
+.left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%; /* Added to prevent overflow */
+    width: 100%; /* Ensure full width on mobile */
+}
+
+.boxes {
     border: 1px solid white;
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 15px;
     background-color: transparent;
+    width: 100%; /* Full width on all screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Bigbox adjustments for mobile */
+.bigbox {
+    display: flex;
+    flex-direction: row; /* Default layout */
+    align-items: center;
+    gap: 15px;
+    width: 100%;
 }
 .boxes:hover{
     background-color: white;
@@ -550,6 +586,12 @@ footer {
     width: 1px;
     height: 100%;
     background: #222222;
+}
+.success-message {
+    display: none;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
