@@ -59,11 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.getElementById('menubutton').addEventListener('click', function() {
-    const nav_links = document.getElementById('nav_links');
-    
-    nav_links.style.width="80vw"; 
-
+    const navLinks = document.getElementById('nav_links');
+    navLinks.style.width = navLinks.style.width === "80vw" ? "0vw" : "80vw";
 });
+
 document.getElementById('arrow').addEventListener('click', function() {
     const nav_links = document.getElementById('nav_links');
       nav_links.style.width="0vw";  
