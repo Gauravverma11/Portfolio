@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="polio.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="module" src="script.js"></script>
 
@@ -15,24 +15,19 @@
 </head>
 <body>
 
-    <div class="main_page">
-        <nav class="navbar">
-            <div class="logo">Gaurav Verma</div>
-            
-            
-            <div class="nav-links" id="nav_links">
-               <button id="arrow"> <i class="fa-solid fa-arrow-right"></i></button>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button id="dwnld">Download CV</button>
-            <button id="menubutton">
-                <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </nav>
+   <nav class="navbar">
+    <div class="logo">Gaurav Verma</div>
+    <div class="nav-links" id="nav_links">
+        <button id="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <button id="dwnld">Resume 📩</button>
+    <button id="menubutton"><i class="fa-solid fa-bars"></i></button>
+</nav>  <!-- यहाँ </div> की जरूरत नहीं -->
+
     
         <!-- Hero Section -->
         <section class="hero">
@@ -54,11 +49,11 @@
             
             <!-- Social Links -->
             <div class="connect_links">
-                <a href="#" class="connect_btn">
+                <a href="https://www.geeksforgeeks.org/user/itsmegau4thm/" class="connect_btn">
                     <img src="gfg2.svg" alt="geeksforgeeks">
                     <span>GeekforGeeks</span>
                 </a>
-                <a href="#" class="connect_btn">
+                <a href="https://www.linkedin.com/in/gaurav-verma-401538281" class="connect_btn">
                     <i class="fab fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
@@ -66,11 +61,11 @@
                     <i class="fa-solid fa-file-arrow-down"></i>
                     <span>CV Download</span>
                 </a>
-                <a href="#" class="connect_btn">
+                <a href="https://leetcode.com/u/gauravverma111/" class="connect_btn">
                     <img src="leetcode.png" alt="Leetcode">
                     <span>Leetcode</span>
                 </a>
-                <a href="#" class="connect_btn">
+                <a href="https://github.com/Gauravverma11" class="connect_btn">
                     <i class="fab fa-github"></i>
                     <span>Github</span>
                 </a>
@@ -320,8 +315,6 @@
             <p>&copy; <span id="year"></span> Gaurav Verma. All rights reserved.</p>
         </div>
     </footer>
-
-    
     
 
 </body>
